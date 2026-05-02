@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <main
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center pt-20 bg-transparent reveal"
+      className="relative min-h-screen flex flex-col justify-center pt-20 bg-transparent reveal reveal"
     >
       <section className="max-w-[1280px] mx-auto px-6 md:px-[64px] w-full">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-[48px] items-center">

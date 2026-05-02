@@ -4,7 +4,7 @@ import Marquee from 'react-fast-marquee';
 
 const MyTechStack = () => {
     return (
-        <section id="tech" className='min-h-[60vh] md:min-h-[80vh] reveal mt-20'>
+        <section id="tech" className='min-h-[60vh] md:min-h-[80vh] reveal mt-20 mx-auto reveal'>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-16 md:mb-20 text-center text-foreground reveal-item">
               My Tech Stack
             </h1>

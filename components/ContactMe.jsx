@@ -42,7 +42,7 @@ export default function ContactMe() {
   return (
     <section
       id="contact"
-      className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl  text-foreground reveal "
+      className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl  text-foreground reveal"
       data-purpose="contact-us-layout"
     >
 

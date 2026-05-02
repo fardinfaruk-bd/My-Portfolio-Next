@@ -45,9 +45,9 @@ const Navbar = () => {
   return (
     <nav
       ref={navRef}
-      className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border shadow-2xl font-sans antialiased"
+      className="sticky top-0 z-50  bg-background/80 backdrop-blur-xl border-b border-border shadow-2xl font-sans antialiased"
     >
-      <div className="container mx-auto flex justify-between items-center px-6 py-4">
+      <div className=" flex justify-between items-center px-6 py-4">
         <Link href="/">
           <motion.div
             whileHover={{ scale: 1.05 }}
