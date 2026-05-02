@@ -42,7 +42,7 @@ export default function ContactMe() {
   return (
     <section
       id="contact"
-      className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl  text-foreground reveal"
+      className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl  text-foreground reveal text-center md:text-left"
       data-purpose="contact-us-layout"
     >
 
@@ -65,7 +65,7 @@ export default function ContactMe() {
           </p>
 
 
-          <div className="space-y-6 pt-4">
+          <div className="space-y-6 pt-4 flex flex-col items-center md:items-start">
             {/* Email */}
             <div className="flex items-center space-x-4 group cursor-pointer">
               <div className="w-12 h-12 rounded-2xl bg-violet-500/10 flex items-center justify-center text-violet-500 group-hover:bg-violet-500 group-hover:text-white transition-all duration-300">
@@ -109,7 +109,7 @@ export default function ContactMe() {
 
           <div className="pt-8">
             <p className="text-sm font-bold text-foreground uppercase tracking-[0.2em] mb-6">Connect with me</p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center md:justify-start">
               {[
                 { icon: <FaGithub />, href: "https://github.com/fardinfaruk-bd", color: "hover:bg-[#333]" },
                 { icon: <FaLinkedin />, href: "#", color: "hover:bg-[#0077b5]" },

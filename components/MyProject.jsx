@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { HiExternalLink } from "react-icons/hi";
+import { IoIosLink } from "react-icons/io";
 
 export default function MyProject() {
   return (
@@ -14,7 +16,7 @@ export default function MyProject() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-14">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10">
         {[
           {
             title: "Dragon News",
@@ -80,12 +82,14 @@ export default function MyProject() {
                   href={project.github}
                 >
                   GitHub
+                  <HiExternalLink/>
                 </Link>
                 <Link
                   className="bg-violet-600 text-white flex items-center justify-center gap-2 px-6 py-3 rounded-2xl font-bold text-sm flex-1 hover:bg-violet-500 transition-all shadow-[0_0_20px_rgba(124,58,237,0.3)]"
                   href={project.demo}
                 >
                   Demo
+                  <IoIosLink />
                 </Link>
               </div>
             </div>

@@ -29,7 +29,7 @@ const HeroVisual = ({ imageSrc }) => {
   }, [x, y]);
 
   return (
-    <div className="md:col-span-5 relative flex justify-center items-center mx-auto reveal">
+    <div className="md:col-span-5 relative flex justify-center items-center mt-20 md:mt-0 reveal">
       <motion.div 
         style={{ rotateX, rotateY, perspective: 1000 }}
         className="relative group w-fit h-fit reveal-item"
