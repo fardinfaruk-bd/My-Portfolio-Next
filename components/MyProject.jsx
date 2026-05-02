@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function MyProject() {
   return (
-    <section id="projects" className="py-32 px-6 max-w-7xl  text-foreground reveal " data-purpose="projects-container">
+    <section id="projects" className="py-32 px-6 max-w-7xl  text-foreground reveal ">
       <div className="text-center mb-24">
         <h2 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">Recent Projects</h2>
         <p className="text-muted text-xl max-w-2xl mx-auto font-medium">
