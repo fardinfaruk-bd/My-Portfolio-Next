@@ -19,12 +19,12 @@ export default function MyProject() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10">
         {[
           {
-            title: "Dragon News",
-            desc: "A modern news portal built with Next.js featuring seamless navigation and real-time updates.",
-            img: "https://i.ibb.co.com/gZVH50ZD/Screenshot-2026-05-02-023519.png",
-            tags: ["Next.js", "Daisy UI", "Tailwind", "MongoDB"],
-            github: "https://github.com/fardinfaruk-bd/Dragon-News-Next",
-            demo: "https://dragon-news-next-beryl.vercel.app/category/01",
+            title: "Bookify",
+            desc: "A modern Online Book Borrowing Platform built with Next.js, offering seamless book discovery and borrowing experience.",
+            img: "https://i.ibb.co.com/PsnH0v4Q/Screenshot-2026-05-16-114614.png",
+            tags: ["Next.js", "Hero Ui", "Daisy UI", "Tailwind", "MongoDB"],
+            github: "https://github.com/fardinfaruk-bd/Bookify-Next-App",
+            demo: "https://bookify-next-app.vercel.app/",
           },
           {
             title: "KeenKeeper",
@@ -46,7 +46,7 @@ export default function MyProject() {
           <motion.article
             key={i}
             whileHover={{ y: -10 }}
-            className="reveal-item relative rounded-3xl p-[1px] bg-card border border-border group overflow-hidden shadow-xl"
+            className="reveal-item relative rounded-3xl p-px bg-card border border-border group overflow-hidden shadow-xl"
           >
             <div className="bg-card/60 backdrop-blur-3xl rounded-[23px] p-6 flex flex-col h-full w-full z-10">
               <div className="rounded-2xl overflow-hidden mb-6 aspect-video bg-muted relative">
@@ -57,10 +57,10 @@ export default function MyProject() {
                   height={500}
                   src={project.img}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-background to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
               </div>
 
-              <div className="flex-grow">
+              <div className="grow">
                 <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-violet-500 transition-colors">
                   {project.title}
                 </h3>

@@ -42,7 +42,7 @@ export default function ContactMe() {
   return (
     <section
       id="contact"
-      className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl  text-foreground reveal text-center md:text-left"
+      className="py-16 px-4 sm:px-6 lg:px-8  text-foreground reveal text-center md:text-left mx auto container"
       data-purpose="contact-us-layout"
     >
 
@@ -132,7 +132,7 @@ export default function ContactMe() {
 
 
         <div
-          className="relative rounded-[1.5rem] bg-card/30 backdrop-blur-3xl p-8 md:p-10 border-2 border-transparent bg-clip-padding shadow-[0_20px_50px_rgba(0,0,0,0.3)] before:absolute before:inset-0 before:-z-10 before:-m-[2px] before:rounded-[inherit] before:bg-gradient-to-br before:from-violet-600/50 before:via-indigo-600/50 before:to-purple-600/50 after:absolute after:inset-0 after:rounded-[inherit] after:bg-gradient-to-tr after:from-white/5 after:to-transparent after:pointer-events-none"
+          className="relative rounded-3xl bg-card/30 backdrop-blur-3xl p-8 md:p-10 border-2 border-transparent bg-clip-padding shadow-[0_20px_50px_rgba(0,0,0,0.3)] before:absolute before:inset-0 before:-z-10 before:-m-[2px] before:rounded-[inherit] before:bg-gradient-to-br before:from-violet-600/50 before:via-indigo-600/50 before:to-purple-600/50 after:absolute after:inset-0 after:rounded-[inherit] after:bg-gradient-to-tr after:from-white/5 after:to-transparent after:pointer-events-none"
           data-purpose="form-wrapper"
         >
           <form onSubmit={handleSubmit} className="space-y-6">
