@@ -42,7 +42,7 @@ export default function ContactMe() {
   return (
     <section
       id="contact"
-      className="py-16 px-4 sm:px-6 lg:px-8  text-foreground reveal text-center md:text-left mx auto container"
+      className="py-16 px-4 sm:px-6 lg:px-8  text-foreground reveal text-center md:text-left mx-auto max-w-7xl"
       data-purpose="contact-us-layout"
     >
 
@@ -88,7 +88,7 @@ export default function ContactMe() {
               </div>
               <div>
                 <p className="text-xs text-muted uppercase font-bold tracking-widest">Call Me</p>
-                <span className="text-muted-foreground font-medium">+8801535485037</span>
+                <span className="text-muted-foreground font-medium">+8801537485037</span>
               </div>
             </div>
 

@@ -7,6 +7,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { Sun, Moon } from "lucide-react";
+import Image from "next/image";
+import logo from "@/public/logo.png";
 
 const navLinks = [
   { name: "Home", href: "#hero", id: "hero" },
@@ -53,7 +55,12 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             className="text-xl font-extrabold tracking-tight text-foreground cursor-pointer"
           >
-            Fardin
+            <Image
+              src={logo}
+              alt="Logo"
+              width={100}
+              height={40}
+            />
           </motion.div>
         </Link>
 
@@ -68,11 +75,10 @@ const Navbar = () => {
               transition={{ duration: 0.8, delay: 0.5 + i * 0.1, ease: "easeOut" }}
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className={`text-sm font-semibold transition-all duration-300 px-4 py-2 rounded-xl ${
-                activeSection === link.id
+              className={`text-sm font-semibold transition-all duration-300 px-4 py-2 rounded-xl ${activeSection === link.id
                   ? "text-violet-500 bg-violet-500/10 shadow-[0_0_20px_rgba(167,139,250,0.1)]"
                   : "text-muted hover:text-foreground hover:bg-foreground/5"
-              }`}
+                }`}
             >
               {link.name}
             </MotionLink>
@@ -99,8 +105,8 @@ const Navbar = () => {
           >
             Contact
           </MotionLink>
-          
-          <button 
+
+          <button
             className="md:hidden text-foreground p-2"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -126,9 +132,8 @@ const Navbar = () => {
                   key={link.id}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`text-lg font-medium ${
-                    activeSection === link.id ? "text-violet-500" : "text-muted"
-                  }`}
+                  className={`text-lg font-medium ${activeSection === link.id ? "text-violet-500" : "text-muted"
+                    }`}
                 >
                   {link.name}
                 </Link>
