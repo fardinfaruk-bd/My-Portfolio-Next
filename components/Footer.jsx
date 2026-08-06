@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full mx-auto mb-20">
                         <div className="space-y-5">
                             <h1 className='text-2xl font-semibold'>Fardin.</h1>
-                            <p className="text-muted font-normal">I'm a passionate frontend developer who loves creating beautiful, responsive, and user-friendly web applications.</p>
+                            <p className="text-muted font-normal">I'm a passionate MERN Stack developer who loves creating beautiful, responsive, and user-friendly web applications.</p>
                         </div>
 
 

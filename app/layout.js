@@ -10,8 +10,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: "Fardin | Frontend Developer",
-  description: "I'm a frontend developer helping you build beautiful websites. Focused on performance, accessibility, and high-end aesthetics.",
+  title: "Fardin | MERN Stack Developer",
+  description: "I'm a MERN Stack developer helping you build beautiful websites. Focused on performance, accessibility, and high-end aesthetics.",
 };
 
 export default function RootLayout({ children }) {

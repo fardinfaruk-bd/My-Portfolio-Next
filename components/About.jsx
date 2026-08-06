@@ -36,7 +36,7 @@ export default function About() {
             data-purpose="bio-content"
           >
             <p>
-              I am a <span className="text-foreground font-bold">Frontend Web Developer</span> dedicated to building
+              I am a <span className="text-foreground font-bold">MERN Stack Developer</span> dedicated to building
               production-ready applications that merge high-end aesthetics with extreme performance.
             </p>
             <p>
