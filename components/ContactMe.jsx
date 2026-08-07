@@ -26,12 +26,28 @@ export default function ContactMe() {
     setIsSubmitting(true);
     setSubmitStatus(null);
 
-    // Simulate an API call
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      console.log("Form submitted:", formData);
-      setSubmitStatus("success");
-      setFormData({ name: "", email: "", phone: "", company: "", message: "" });
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "91e4b936-f752-4a5a-bb73-2895d93053c8", 
+          ...formData,
+          subject: `New Portfolio Message from ${formData.name}`,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", phone: "", company: "", message: "" });
+      } else {
+        setSubmitStatus("error");
+      }
     } catch (error) {
       setSubmitStatus("error");
     } finally {
@@ -42,28 +58,22 @@ export default function ContactMe() {
   return (
     <section
       id="contact"
-      className="py-16 px-4 sm:px-6 lg:px-8  text-foreground reveal text-center md:text-left mx-auto max-w-7xl"
+      className="py-16 px-4 sm:px-6 lg:px-8 text-foreground reveal text-center md:text-left mx-auto max-w-7xl"
       data-purpose="contact-us-layout"
     >
-
       <header className="text-center mb-16" data-purpose="section-header">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Me</h1>
         <p className="text-muted max-w-xl mx-auto text-lg">
-          Have a project in mind? Let's connect and discuss how I can help bring
-          your ideas to life.
+          Have a project in mind? Let's connect and discuss how I can help bring your ideas to life.
         </p>
       </header>
 
-
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
-
         <div className="space-y-8" data-purpose="contact-info-column">
           <h2 className="text-3xl font-semibold">Get in touch today</h2>
           <p className="text-muted text-lg leading-relaxed">
-            I'm always open to discussing new projects, creative ideas, or
-            opportunities to be part of your vision.
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
-
 
           <div className="space-y-6 pt-4 flex flex-col items-center md:items-start">
             {/* Email */}
@@ -129,20 +139,14 @@ export default function ContactMe() {
           </div>
         </div>
 
-
-
         <div
           className="relative rounded-3xl bg-card/30 backdrop-blur-3xl p-8 md:p-10 border-2 border-transparent bg-clip-padding shadow-[0_20px_50px_rgba(0,0,0,0.3)] before:absolute before:inset-0 before:-z-10 before:-m-[2px] before:rounded-[inherit] before:bg-gradient-to-br before:from-violet-600/50 before:via-indigo-600/50 before:to-purple-600/50 after:absolute after:inset-0 after:rounded-[inherit] after:bg-gradient-to-tr after:from-white/5 after:to-transparent after:pointer-events-none"
           data-purpose="form-wrapper"
         >
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
               <div className="flex flex-col space-y-2">
-                <label
-                  className="text-sm font-medium text-muted-foreground"
-                  htmlFor="name"
-                >
+                <label className="text-sm font-medium text-muted-foreground" htmlFor="name">
                   Name
                 </label>
                 <input
@@ -158,10 +162,7 @@ export default function ContactMe() {
               </div>
 
               <div className="flex flex-col space-y-2">
-                <label
-                  className="text-sm font-medium text-muted-foreground"
-                  htmlFor="email"
-                >
+                <label className="text-sm font-medium text-muted-foreground" htmlFor="email">
                   Email
                 </label>
                 <input
@@ -177,10 +178,7 @@ export default function ContactMe() {
               </div>
 
               <div className="flex flex-col space-y-2">
-                <label
-                  className="text-sm font-medium text-muted-foreground"
-                  htmlFor="phone"
-                >
+                <label className="text-sm font-medium text-muted-foreground" htmlFor="phone">
                   Phone
                 </label>
                 <input
@@ -195,10 +193,7 @@ export default function ContactMe() {
               </div>
 
               <div className="flex flex-col space-y-2">
-                <label
-                  className="text-sm font-medium text-muted-foreground"
-                  htmlFor="company"
-                >
+                <label className="text-sm font-medium text-muted-foreground" htmlFor="company">
                   Company
                 </label>
                 <input
@@ -214,10 +209,7 @@ export default function ContactMe() {
             </div>
 
             <div className="flex flex-col space-y-2">
-              <label
-                className="text-sm font-medium text-muted-foreground"
-                htmlFor="message"
-              >
+              <label className="text-sm font-medium text-muted-foreground" htmlFor="message">
                 Message
               </label>
               <textarea
@@ -250,7 +242,6 @@ export default function ContactMe() {
                 There was an error sending your message. Please try again.
               </motion.div>
             )}
-
 
             <div className="pt-4">
               <button
