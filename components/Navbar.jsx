@@ -8,7 +8,6 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { Sun, Moon } from "lucide-react";
 import Image from "next/image";
-import logo from "@/public/logo.png";
 
 const navLinks = [
   { name: "Home", href: "#hero", id: "hero" },
@@ -56,7 +55,7 @@ const Navbar = () => {
             className="text-xl font-extrabold tracking-tight text-foreground cursor-pointer"
           >
             <Image
-              src={logo}
+              src="https://i.ibb.co.com/qLTDjRQ9/remove-Text-only-logo-202605162326-Photoroom.png"
               alt="Logo"
               width={100}
               height={40}

@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FaFacebook, FaGithub, FaInstagram } from 'react-icons/fa';
-import logo from '@/public/logo.png';
 const Footer = () => {
     return (
         <div className="bg-card w-full text-foreground border-t border-border  reveal">
@@ -14,7 +13,7 @@ const Footer = () => {
                         <div className='flex items-center justify-left'>
                             <Link href="/">
                                 <Image
-                                    src={logo}
+                                    src="https://i.ibb.co.com/qLTDjRQ9/remove-Text-only-logo-202605162326-Photoroom.png"
                                     alt="Logo"
                                     width={100}
                                     height={40}
