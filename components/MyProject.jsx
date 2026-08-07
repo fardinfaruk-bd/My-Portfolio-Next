@@ -19,28 +19,28 @@ export default function MyProject() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10">
         {[
           {
-            title: "Bookify",
-            desc: "A modern Online Book Borrowing Platform built with Next.js, offering seamless book discovery and borrowing experience.",
-            img: "https://i.ibb.co.com/PsnH0v4Q/Screenshot-2026-05-16-114614.png",
+            title: "MediQueue",
+            desc: "MediQueue is a web platform built with Next.js and MongoDB that connects students with tutors. It allows students to discover tutors and book preferred time slots while enabling tutors to set up profiles, list available hours, and manage bookings.",
+            img: "https://i.ibb.co.com/gZC98KFJ/Screenshot-2026-08-07-194348.png",
             tags: ["Next.js", "Hero Ui", "Daisy UI", "Tailwind", "MongoDB"],
+            github: "https://github.com/fardinfaruk-bd/MediQueue-Next",
+            demo: "https://mediqueue-next.vercel.app",
+          },
+          {
+            title: "StartupForge",
+            desc: "StartupForge is a Next.js 15 platform that connects startup founders with collaborators to build team projects. Founders can post roles and manage applicants, while collaborators can browse listings, apply with portfolios, and track their application status.",
+            img: "https://i.ibb.co.com/RGGMgZwp/Screenshot-2026-08-07-201114.png",
+            tags: ["Next.js", "React", "Daisy UI","Express","MongoDB"],
+            github: "https://github.com/fardinfaruk-bd/StartupForge-Next",
+            demo: "https://startupforge-next-ecru.vercel.app",
+          },
+          {
+            title: "Bookify",
+            desc: "Bookify is a modern book discovery and management web application built with Next.js. It allows users to explore books, filter them by categories, view detailed information, and manage their profile with a smooth and interactive user experience.",
+            img: "https://i.ibb.co.com/hJ2Dn2DP/Screenshot-2026-08-07-201511.png",
+            tags: ["Next.js", "React", "Daisy UI","Express","MongoDB"],
             github: "https://github.com/fardinfaruk-bd/Bookify-Next-App",
             demo: "https://bookify-next-app.vercel.app/",
-          },
-          {
-            title: "KeenKeeper",
-            desc: "Advanced contact management app to keep track of connections and communication history.",
-            img: "https://i.ibb.co.com/TBGnfMcJ/Screenshot-2026-05-02-024423.png",
-            tags: ["Next.js", "React", "Daisy UI", "MongoDB"],
-            github: "https://github.com/fardinfaruk-bd/KeenKeeper-A7-Next.js",
-            demo: "https://keenkeeper-alpha.vercel.app/",
-          },
-          {
-            title: "Hero IO",
-            desc: "Streamlined app installer portal helping users discover and setup software effortlessly.",
-            img: "https://i.ibb.co.com/TD4yMzgG/Screenshot-2026-05-02-025547.png",
-            tags: ["React", "Daisy UI", "Tailwind CSS"],
-            github: "https://github.com/fardinfaruk-bd/Hero-Io-App-installer-Website",
-            demo: "https://heroio-web.netlify.app/",
           },
         ].map((project, i) => (
           <motion.article
