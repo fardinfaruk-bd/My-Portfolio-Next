@@ -22,19 +22,19 @@ const Hero = () => {
                 Available for new opportunities
               </span>
             </div>
-            <h1 className="text-[40px] sm:text-[50px] md:text-[60px] lg:text-[70px] font-extrabold leading-[1.1] tracking-[-0.04em] text-foreground glow-text reveal-item text-center md:text-left">
+            <h1 className="text-[40px] sm:text-[50px] md:text-[60px] lg:text-[65px] font-extrabold leading-[1.1] tracking-[-0.04em] text-foreground glow-text reveal-item text-center md:text-left">
               Hey, I'm {" "}
               <span className="text-violet-500">
                 <TypeAnimation
                   sequence={[
                     "Md Fardin Faruk 👋",
-                    5000,
+                    3000,
                     "a MERN Stack Developer",
-                    3000,
+                    2000,
                     "a Frontend Developer",
-                    3000,
+                    2000,
                     "a JavaScript Enthusiast",
-                    3000
+                    2000
                   ]}
                   wrapper="span"
                   speed={50}

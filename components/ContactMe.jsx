@@ -122,7 +122,7 @@ export default function ContactMe() {
             <div className="flex gap-4 justify-center md:justify-start">
               {[
                 { icon: <FaGithub />, href: "https://github.com/fardinfaruk-bd", color: "hover:bg-[#333]" },
-                { icon: <FaLinkedin />, href: "#", color: "hover:bg-[#0077b5]" },
+                { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/md-fardin-faruk", color: "hover:bg-[#0077b5]" },
                 { icon: <FaInstagram />, href: "https://www.instagram.com/_fardin_zz/", color: "hover:bg-[#e4405f]" }
               ].map((social, i) => (
                 <a
