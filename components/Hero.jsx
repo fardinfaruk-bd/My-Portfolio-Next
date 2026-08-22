@@ -51,7 +51,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-wrap gap-4 mt-8 reveal-item justify-center md:justify-start">
               <Link
-                href="https://drive.google.com/uc?export=download&id=14BdAdDsDmD8lo7q-WgepdLuO80WfWuJR"
+                href="https://drive.google.com/uc?export=download&id=1UNXFJIs7BJugZZI_2XV7gsweRASnPD7E"
                 target="_blank"
                 className="bg-primary-container text-white px-8 py-4 rounded-2xl text-[16px] font-bold tracking-[0.05em] hover:opacity-90 transition-all flex items-center gap-2 shadow-2xl shadow-primary-container/20 hover:scale-105 active:scale-95"
               >
