@@ -54,7 +54,7 @@ const HeroVisual = ({ imageSrc }) => {
         </div>
 
         {/* Floating Badge */}
-        <div
+        {/* <div
           className="absolute -bottom-6 -right-6 sm:-bottom-8 sm:-right-8 md:bottom-4 md:right-1 bg-card/90 backdrop-blur-2xl border border-border p-2 sm:p-3 rounded-3xl shadow-2xl flex items-center gap-2 sm:gap-4 group-hover:translate-y-[-10px] transition-transform duration-500 z-20 opacity-0 scale-50"
           id="hero-badge"
         >
@@ -71,7 +71,7 @@ const HeroVisual = ({ imageSrc }) => {
               Experience
             </p>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </div>
   );
