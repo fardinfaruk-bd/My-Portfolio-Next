@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
-const HeroVisual = ({ imageSrc }) => {
+const HeroVisual = () => {
   // Mouse move parallax values
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -44,7 +44,7 @@ const HeroVisual = ({ imageSrc }) => {
         >
           <div className="w-full h-full rounded-full bg-background overflow-hidden border-4 border-background relative">
             <Image
-              src={imageSrc}
+              src={"https://i.ibb.co.com/wZLF7bdP/Corporate-portrait-of-person-2-K-202608262100.jpg"}
               alt="Portrait of Fardin"
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-700"

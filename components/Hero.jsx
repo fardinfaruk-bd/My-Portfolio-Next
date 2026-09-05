@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import MyImage from "../public/avatar.png";
+
 import Link from "next/link";
 import HeroVisual from "./HeroVisual";
 import { TypeAnimation } from "react-type-animation";
@@ -69,7 +69,7 @@ const Hero = () => {
           </div>
 
           {/* Hero Visual (Client Side) */}
-          <HeroVisual imageSrc={MyImage} />
+          <HeroVisual  />
         </div>
       </section>
     </main>
