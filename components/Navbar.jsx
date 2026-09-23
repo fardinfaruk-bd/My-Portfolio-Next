@@ -55,9 +55,9 @@ const Navbar = () => {
             className="text-xl font-extrabold tracking-tight text-foreground cursor-pointer"
           >
             <Image
-              src="https://i.ibb.co.com/qLTDjRQ9/remove-Text-only-logo-202605162326-Photoroom.png"
+              src="https://i.ibb.co.com/0Vv39ZRD/Untitled-1.png"
               alt="Logo"
-              width={100}
+              width={40}
               height={40}
             />
           </motion.div>

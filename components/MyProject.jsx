@@ -29,7 +29,7 @@ export default function MyProject() {
           {
             title: "StartupForge",
             desc: "StartupForge is a Next.js 15 platform that connects startup founders with collaborators to build team projects. Founders can post roles and manage applicants, while collaborators can browse listings, apply with portfolios, and track their application status.",
-            img: "https://i.ibb.co.com/RGGMgZwp/Screenshot-2026-08-07-201114.png",
+            img: "https://i.ibb.co.com/c44Rd7n/Startup-Forge.png",
             tags: ["Next.js", "React", "Daisy UI","Express","MongoDB"],
             github: "https://github.com/fardinfaruk-bd/StartupForge-Next",
             demo: "https://startupforge-next-ecru.vercel.app",
@@ -37,7 +37,7 @@ export default function MyProject() {
           {
             title: "Bookify",
             desc: "Bookify is a modern book discovery and management web application built with Next.js. It allows users to explore books, filter them by categories, view detailed information, and manage their profile with a smooth and interactive user experience.",
-            img: "https://i.ibb.co.com/hJ2Dn2DP/Screenshot-2026-08-07-201511.png",
+            img: "https://i.ibb.co.com/DHvK4t51/Bookify.png",
             tags: ["Next.js", "React", "Daisy UI","Express","MongoDB"],
             github: "https://github.com/fardinfaruk-bd/Bookify-Next-App",
             demo: "https://bookify-next-app.vercel.app/",
@@ -51,24 +51,24 @@ export default function MyProject() {
             <div className="bg-card/60 backdrop-blur-3xl rounded-[23px] p-6 flex flex-col h-full w-full z-10">
               <div className="rounded-2xl overflow-hidden mb-6 aspect-video bg-muted relative">
                 <Image
-                  alt={project.title}
+                  alt={project?.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   width={500}
                   height={500}
-                  src={project.img}
+                  src={project?.img}
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-background to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
               </div>
 
               <div className="grow">
                 <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-violet-500 transition-colors">
-                  {project.title}
+                  {project?.title}
                 </h3>
                 <p className="text-muted mb-6 leading-relaxed text-[15px]">
-                  {project.desc}
+                  {project?.desc}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-8">
-                  {project.tags.map((tag) => (
+                  {project?.tags.map((tag) => (
                     <span key={tag} className="px-3 py-1 bg-foreground/5 text-muted-foreground text-[12px] font-bold rounded-lg border border-border">
                       {tag}
                     </span>
