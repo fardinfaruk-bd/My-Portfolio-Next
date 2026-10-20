@@ -21,7 +21,7 @@ export default function MyProject() {
           {
             title: "MediQueue",
             desc: "MediQueue is a web platform built with Next.js and MongoDB that connects students with tutors. It allows students to discover tutors and book preferred time slots while enabling tutors to set up profiles, list available hours, and manage bookings.",
-            img: "https://i.ibb.co.com/gZC98KFJ/Screenshot-2026-08-07-194348.png",
+            img: "https://i.ibb.co.com/sJ98Fjk1/Screenshot-2026-10-20-123119.png",
             tags: ["Next.js", "Hero Ui", "Daisy UI", "Tailwind", "MongoDB"],
             github: "https://github.com/fardinfaruk-bd/MediQueue-Next",
             demo: "https://mediqueue-next.vercel.app",
@@ -29,7 +29,7 @@ export default function MyProject() {
           {
             title: "StartupForge",
             desc: "StartupForge is a Next.js 15 platform that connects startup founders with collaborators to build team projects. Founders can post roles and manage applicants, while collaborators can browse listings, apply with portfolios, and track their application status.",
-            img: "https://i.ibb.co.com/c44Rd7n/Startup-Forge.png",
+            img: "https://i.ibb.co.com/YTQnMR3J/Screenshot-2026-10-20-123149.png",
             tags: ["Next.js", "React", "Daisy UI","Express","MongoDB"],
             github: "https://github.com/fardinfaruk-bd/StartupForge-Next",
             demo: "https://startupforge-next-ecru.vercel.app",
